@@ -89,7 +89,7 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <a href="https://github.com/Ujwaldevgade" target="_blank" rel="noopener noreferrer" className="more-projects-button">
+          <a href="https://github.com/Magar0" target="_blank" rel="noopener noreferrer" className="more-projects-button">
             More Projects
           </a>
         </div>
