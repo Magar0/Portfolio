@@ -1,18 +1,15 @@
 // src/components/Home.js
-import React, { useEffect, useState } from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { IoLogoVercel } from "react-icons/io5";
+import Tooltip from '@mui/material/Tooltip';
+
 import WhatIDo from '../../components/whatIDo/WhatIDo.js';
 import './Home.css';
 
 const Home = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   return (
-    <div className={`home-container ${isVisible ? 'fade-in' : ''}`}>
+    <div className={`home-container`}>
       <div className="intro-big-image-container move-animation">
         {/* Intro Section */}
         <div className="intro-container">
@@ -23,21 +20,36 @@ const Home = () => {
 
           {/* social media links with icons */}
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/magar0/" target="_blank" rel="noopener noreferrer" title="Linkedin">
-              <FaLinkedin size={40} color="#2867B2" />
+            <Tooltip title="Linkedin" placement="top-end">
+              <a href="https://www.linkedin.com/in/magar0/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={40} color="#2867B2" />
+              </a>
+            </Tooltip>
+            <Tooltip title="GitHub" placement="top-end">
+              <a href="https://github.com/Magar0" target="_blank" rel="noopener noreferrer">
+                <FaGithub size={40} color="#211F1F" />
+              </a>
+            </Tooltip>
+            <Tooltip title="Vercel" placement="top-end">
+              <a href="https://vercel.com/rakesh-magars-projects" target="_blank" rel="noopener noreferrer">
+                <IoLogoVercel size={40} color="#211F1F" />
+              </a>
+            </Tooltip>
+            <Tooltip title="Email" placement="top-end">
+              <a href="mailto:rakeshmagar0@gmail.com" target="_blank" rel="noopener noreferrer">
+                <FaEnvelope size={40} color="#D44638" />
+              </a>
+            </Tooltip>
+          </div>
+          <div className="bigBtn">
+            {/* GitHub Star button */}
+            <a href="https://github.com/Magar0" target="_blank" rel="noopener noreferrer" className="star-button">
+              <span className="star-symbol">&#9733;</span> Star Me On Github
             </a>
-            <a href="https://github.com/Magar0" target="_blank" rel="noopener noreferrer" title="GitHub">
-              <FaGithub size={40} color="#211F1F" />
-            </a>
-            <a href="mailto:rakeshmagar0@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
-              <FaEnvelope size={40} color="#D44638" />
+            <a href="https://flowcv.com/resume/f92ik9q28t" target="_blank" className="resume-button">
+              Click to See My Resume
             </a>
           </div>
-
-          {/* GitHub Star button */}
-          <a href="https://github.com/Magar0" target="_blank" rel="noopener noreferrer" className="star-button">
-            <span className="star-symbol">&#9733;</span> Star Me On Github
-          </a>
         </div>
 
         {/* Big Image Section */}

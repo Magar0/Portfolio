@@ -1,7 +1,3 @@
-/* src/components/Education.css */
-
-/* ... existing styles ... */
-
 .education-container {
   padding: 20px;
 }
@@ -14,14 +10,14 @@
 }
 
 .image-container {
-  width: 55%; /* Set the width of the image container as needed */
-  height: 65%; /* Set the height of the image container as needed */
+  width: 55%;
+  height: 65%;
   margin-right: 20px;
 }
 
 .education-image {
-  width: 100%; /* Make the image fill the container */
-  height: 100%; /* Make the image fill the container */ 
+  width: 100%;
+  height: 100%;
 }
 
 .education-container {
@@ -56,13 +52,6 @@
   font-weight: bold;
 }
 
-.duration {
-  color: #555;
-}
-
-.percentage {
-  color: #007bff;
-}
 
 /* Show details when item is selected */
 .education-item.selected .details {
@@ -75,8 +64,8 @@
 }
 
 .details .full-form {
-  font-size: 18px; /* Adjust the font size as needed */
-  color: #000; /* Dark black color */
+  font-size: 18px;
+  color: #000;
 }
 
 /* Media queries for responsiveness */

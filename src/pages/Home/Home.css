@@ -12,7 +12,6 @@
 .intro-big-image-container {
   display: flex;
   flex-direction: column-reverse;
-  /* Reverse order for mobile */
   width: 100%;
 }
 
@@ -20,7 +19,6 @@
 .big-image-container {
   flex-shrink: 0;
   width: 100%;
-  /* Full width for mobile */
 }
 
 .big-image-container img {
@@ -44,7 +42,7 @@
 }
 
 /* Star Button Styles */
-.star-button {
+.bigBtn a {
   color: #fff;
   cursor: pointer;
   display: flex;
@@ -53,16 +51,20 @@
   background-color: #001f3f;
   padding: 10px 10px;
   text-decoration: none;
-  border: 2px solid #001f3f;
   border-radius: 5px;
+  border: none;
   margin-top: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
   width: 40%;
 }
 
-.star-button:hover {
-  background-color: #fff;
-  color: #001f3f;
+.bigBtn a:nth-child(2) {
+  padding: 18px 10px;
+}
+
+.bigBtn a:hover {
+  background-color: #19589c;
+  color: #fff;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -111,10 +113,6 @@
 }
 
 /* Move Animation Styles */
-.home-container.fade-in {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-}
 
 .move-animation {
   animation: moveAnimation 1s ease-out;

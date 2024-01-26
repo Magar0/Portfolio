@@ -1,5 +1,3 @@
-/* src/components/Experience.css */
-
 .experience-container {
   padding: 20px;
 }
@@ -11,17 +9,13 @@
 
 .image-container {
   width: 55%;
-  /* Set the width of the image container as needed */
   height: 65%;
-  /* Set the height of the image container as needed */
   margin-right: 20px;
 }
 
 .experience-image {
   width: 100%;
-  /* Make the image fill the container */
   height: 100%;
-  /* Make the image fill the container */
 }
 
 .experience-title {

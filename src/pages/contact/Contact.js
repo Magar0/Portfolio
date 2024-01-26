@@ -2,7 +2,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import './Contact.css';
-import AnimatedWrapper from '../../components/AnimatedWrapper';
+import AnimatedWrapper from '../../components/animatedWrapper/AnimatedWrapper';
 
 const Contact = () => {
   return (
@@ -39,7 +39,7 @@ const Contact = () => {
           <div className="contact-me-section">
             <h2>Contact Me for Business Inquiries</h2>
             <p>You can email me for any business requirements and queries. I'm eager to discuss potential collaborations and contribute to your projects.</p>
-            <a href="mailto:ujwaldevgade@gmail.com" className="email-button">
+            <a href="mailto:rakeshmagar0@gmail.com" className="email-button">
               Click to Email Me
             </a>
           </div>

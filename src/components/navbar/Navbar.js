@@ -1,16 +1,11 @@
-// src/components/Navbar.js
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import './Navbar.css'; // Import the CSS file
+import './Navbar.css';
 
 const Navbar = () => {
   return (
     <>
       <nav className="App-nav">
-        {/* <NavLink to="/">
-          <img src="" alt="Logo" className="nav-logo" />
-        </NavLink> */}
-
         <NavLink to="/" className="nav-link">
           Home
         </NavLink>

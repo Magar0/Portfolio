@@ -1,7 +1,7 @@
 // src/components/Experience.js
 import React, { useState } from 'react';
-import './Experience.css'; // Import the CSS file
-import AnimatedWrapper from './AnimatedWrapper';
+import './Experience.css';
+import AnimatedWrapper from '../animatedWrapper/AnimatedWrapper';
 
 const Experience = () => {
   const [showInternshipDetails, setShowInternshipDetails] = useState(false);

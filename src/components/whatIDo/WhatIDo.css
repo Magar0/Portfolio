@@ -42,6 +42,10 @@
 .right-section li {
   margin-bottom: 10px;
   color: rgb(69, 69, 69);
+
+  &:hover {
+    color: #0000008f;
+  }
 }
 
 .tech-icons svg {
