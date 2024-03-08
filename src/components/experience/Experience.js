@@ -2,14 +2,29 @@
 import React, { useState } from 'react';
 import './Experience.css';
 import AnimatedWrapper from '../animatedWrapper/AnimatedWrapper';
+import Certifications from '../certification/Certifications';
+
 
 const Experience = () => {
-  const [showInternshipDetails, setShowInternshipDetails] = useState(false);
 
-  const handleInternshipClick = () => {
-    setShowInternshipDetails(!showInternshipDetails);
-  };
-
+  const expDetails = [
+    {
+      course: "Web Development Trainee (MERN Stack)",
+      institute: "Almabetter Online",
+      startDate: "April 2023",
+      endDate: "Present",
+      url: "https://certificates.almabetter.com/en/profile/rakeshmagar334891",
+      skills: ["Established expertise in full-stack programming.", "Hands on experience in Reactjs, Nextjs, Node JS, Express Js, Sql, MongoDB, etc.", "Implemented authentication and data encryption."]
+    },
+    {
+      course: "Web Development Internship",
+      institute: "NullCLass Online",
+      startDate: "January 22,2024",
+      endDate: "February 22,2024",
+      url: "https://nullclass.com/wp-content/uploads/2024/02/Rakesh-Magar-1.png",
+      skills: ["Hands on experience on MERN stack, payment integration, authentication.", "Made Q&A platform similar to Stack overflow clone."]
+    }
+  ]
   return (
     <AnimatedWrapper>
       <div className="experience-container">
@@ -25,19 +40,30 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="internship-container" onClick={handleInternshipClick}>
-          <h3>Web Development Trainee</h3>
-          {showInternshipDetails && (
-            <div className="internship-details">
-              <p>
-                <strong>Full Stack Development</strong><br />
-                Almabetter Online
-                <br />
-                April 2023 - Present
-              </p>
-            </div>
-          )}
+        <div className="internship-container">
+          {expDetails.map(item => (
+            <>
+              <div className="internship-details">
+                <a href={item.url} className='link-certificate' title='certificate'>
+                  <h3>{item.course}</h3>
+                  <p>
+                    {item.institute}
+                    <br />
+                    {item.startDate} - {item.endDate}
+                  </p>
+                  <ul>
+                    {
+                      item.skills.map((e, ind) => (
+                        <li key={ind} >{e}</li>
+                      ))
+                    }
+                  </ul>
+                </a>
+              </div>
+            </>
+          ))}
         </div>
+        <Certifications />
       </div>
     </AnimatedWrapper>
   );

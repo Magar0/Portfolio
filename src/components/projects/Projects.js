@@ -7,46 +7,52 @@ import List from './List';
 const projectsData = [
   {
     name: 'Stack Overflow Clone (MERN stack)',
-    description: ["Signup & login features.", 'Users can ask ,vote , post and delete questions & answers.', "Edit own profile and change password.", "JWT token used for security.", "Data stored in MongoDB."],
+    description: ["Developed a feature-rich Q&A responsive platform with over 20 features similar to Stack Overflow.", "Integrated secure user authentication and authorization with sign-up,login, password management, and JWT-based tokens.", "Enabled extensive user interaction with question asking, editing, deletion,voting, answering, and profile management", "Enhanced user experience with dynamic theme personalization (day/night mode, auto-theme based on time/weather).", "Integrated an AI chatbot for interactive learning and engagement, with email OTP verification for secure access.", "Leveraged Stripe Billing API for different subscription.", "Leveraged Node.js, Express.js, Bcrypt.js and other technologies for and a robust and scalable backend foundation. (serving over 15 REST api endpoints)"],
     tags: ["MERN", "React JS", "Node JS", "Express JS", "JWT", "MongoDB"],
     githubLink: 'https://github.com/Magar0/StackOverflow-clone-MERN',
-    hostedPageLink: "https://stack-overflow-clone-mern-frontend.vercel.app"
+    hostedPageLink: "https://stack-overflow-clone-mern-frontend.vercel.app",
+    img: "/images/StackOverflow-Clone.png"
   },
   {
     name: 'Role Based API (Node JS)',
-    description: ["Express JS used for making different endpoints.", "Signup and Login for user & admin.", "User can only delete or modify their name.", "Admin can modify/ delete all user details.", "User authentication using JWT.", "Password encrypted.", "Data validated.", "Data stored in MongoDB."],
-    tags: ["Node JS", "Express JS", "JWT", "MongoDB", "REST Api"],
+    description: ["Created secure RESTful API with over 10 endpoints using Express.js and MongoDB.", "Enforced user authentication (JWTs) and role-based access control for authorization.", "Comprehensive User Management: Users can view & update profiles, while Admins have full CRUD access.", "Robust Security: Middleware and input validation techniques ensure data integrity."],
     githubLink: 'https://github.com/Magar0/RoleBased-REST-api-using-NodeJs',
     hostedPageLink: "https://role-based-rest-api-using-node-js.vercel.app"
   },
   {
     name: 'Mobile Ordering App  (MERN Stack)',
-    description: ['React JS , styled component is used.', "Redux is used to manage state.", "Router is used to navigate different pages.", "Infinte scrolling features added.", "Search and multiple filters are added to find data.", "In the backend Express JS is used to make different endpoints"],
+    description: ["Global state management library, Redux Toolkit is used to store data.", "Displayed in card format and also made responsive with the help of Styled-Component.", "Search by name option available.", "Users can also search for the mobile by filters like price, name, type, processor, memory, OS", "Loading CSS, errror ane handle by using Redux Global State.", "React-router-dom is used to route between pages.", "Dynamic route is used to show product details for each item.", "Infinite Scrolling is used."],
     tags: ['MERN', "MongoDB", "Express JS", "React JS", "NodeJS", "styled-component", "REST Api"],
     githubLink: 'https://github.com/Magar0/MERN-stack-MobileOrderingApplication',
-    hostedPageLink: "https://mern-stack-mobile-ordering-application.vercel.app/"
+    hostedPageLink: "https://mern-stack-mobile-ordering-application.vercel.app/",
+    img: "/images/Thapa-Mobile.png"
   },
 
   {
-    name: 'Note Taking Rest API (Node JS)',
-    description: ['CRUD operation.', "MongoDB database is used", "Data validation and Error habdling done.", "Jest and Supertest is used for testing"],
-    tags: ["Node.js", "MongoDB", "Express JS", "Jest", "supertest"],
-    githubLink: 'https://github.com/Magar0/CRUD-Api-Node-Js-Express-Js',
-    hostedPageLink: "https://crud-api-node-js-express-js.vercel.app/"
+    name: 'Mobile-App-UI',
+    description: ["A simple UI made using HTML & tailwind CSS"],
+    tags: ["HTML", "CSS"],
+    githubLink: 'https://github.com/Magar0/Mobile-App-UI',
+    hostedPageLink: "https://magar0.github.io/Mobile-App-UI/",
+    img: "/images/MobileAppUI.png"
   },
   {
     name: 'Car Search (Next JS)',
     description: ['Developed a user-friendly web application for searching cars.', "Bootstrap used for styling.", "Search , Filter, Pagination,etc. features added.", "Modals, pop over etc used.", "Redux is used to manage Global state.", "Routing is used"],
     tags: ["Next JS", "Redux", "BootStrap"],
     githubLink: 'https://github.com/Magar0/Car-search-Next-js',
-    hostedPageLink: "https://car-search-next-js.vercel.app/"
+    hostedPageLink: "https://car-search-next-js.vercel.app/",
+    img: "/images/carSearch.png"
+
   },
   {
-    name: 'React TaskManagement application (React JS)',
+    name: 'React TaskManagement application',
     description: ['Users can read , add, delete and edit task.', "Can change status (completed or not) by clicking on checkbox.", "Visual indication is provided for completed task", "Tailwind CSS used", "Data stored in Local Storage", "Context Hook used for sahring data"],
     tags: ["React JS", "Tailwind CSS", "LocalStorage"],
     githubLink: 'https://github.com/Magar0/React-TaskManagement-application',
-    hostedPageLink: "https://magar0.github.io/React-TaskManagement-application"
+    hostedPageLink: "https://magar0.github.io/React-TaskManagement-application",
+    img: "/images/Task-Manager.png"
+
   },
 ];
 
@@ -82,7 +88,18 @@ const Projects = () => {
                 className={`project-item ${selectedProject === index ? 'selected' : ''}`}
                 onClick={() => handleProjectClick(index)}
               >
-                <h3>{project.name}</h3>
+                <div className='head'>
+                  <h3>{project.name}</h3>
+                  <div className='btn-box'>
+                    <a href={project.hostedPageLink} target="_blank" rel="noopener noreferrer">
+                      Live
+                    </a>
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      Code
+                    </a>
+                  </div>
+                </div>
+
                 {selectedProject === index && (
                   <div className="project-details">
 
@@ -96,12 +113,18 @@ const Projects = () => {
                         <List key={ind} data={list} />
                       ))}
                     </ul>
-
-                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                      View Project
-                    </a>
+                    {
+                      project.img &&
+                      <div className='project-img-box'>
+                        <img src={project.img} className='project-img' alt="pic" />
+                      </div>
+                    }
+                    <br />
                     <a href={project.hostedPageLink} target="_blank" rel="noopener noreferrer">
-                      View Hosted Page
+                      Live
+                    </a>
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      Code
                     </a>
 
                   </div>
@@ -114,7 +137,7 @@ const Projects = () => {
           </a>
         </div>
       </div>
-    </AnimatedWrapper>
+    </AnimatedWrapper >
   );
 };
 

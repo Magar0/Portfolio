@@ -24,13 +24,11 @@
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -39,19 +37,57 @@
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s;
-  width: calc(50% - 10px);
+  width: 45%;
   box-sizing: border-box;
   margin-bottom: 20px;
   background-color: rgb(167, 227, 251);
+
+  .project-img-box {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  li {
+    color: #000000c0;
+  }
+
+  .project-img {
+    height: 70vh;
+    width: auto;
+    margin: auto;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    .btn-box {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 .project-item:hover {
   transform: scale(1.05);
+
+}
+
+.project-item.selected {
+  width: 90%;
+
+  .head {
+    a {
+      display: none;
+    }
+  }
 }
 
 /* tags */
 .tags {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
 
@@ -64,7 +100,6 @@
     color: #39739d;
   }
 }
-
 
 
 .more-projects-button {
@@ -87,7 +122,40 @@
   transition: 0.3s;
 }
 
+
+.projects-content a {
+  display: inline-block;
+  background-color: #001f3f;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 8px 0 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.projects-content a:hover {
+  background-color: #fff;
+  color: #001f3f;
+}
+
+
 /* Media queries for responsiveness */
+@media screen and (max-width:1230px) {
+  .project-item .btn-box a {
+    padding: 7px 15px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .project-item {
+    .project-img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .project-item {
     width: 100%;
@@ -113,18 +181,14 @@
   }
 }
 
-.project-details a {
-  display: inline-block;
-  background-color: #001f3f;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin: 10px 8px 0 0;
-  transition: background-color 0.3s, color 0.3s;
-}
+@media screen and (max-width: 576px) {
+  .project-grid {
+    gap: 10px;
+  }
 
-.project-details a:hover {
-  background-color: #fff;
-  color: #001f3f;
+  .project-item {
+    h3 {
+      font-size: 1rem;
+    }
+  }
 }

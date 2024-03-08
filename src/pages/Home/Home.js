@@ -43,11 +43,8 @@ const Home = () => {
           </div>
           <div className="bigBtn">
             {/* GitHub Star button */}
-            <a href="https://github.com/Magar0" target="_blank" rel="noopener noreferrer" className="star-button">
-              <span className="star-symbol">&#9733;</span> Star Me On Github
-            </a>
             <a href="https://flowcv.com/resume/f92ik9q28t" target="_blank" className="resume-button">
-              Click to See My Resume
+              My Resume
             </a>
           </div>
         </div>

@@ -2,13 +2,14 @@
 import React, { useState } from 'react';
 import './Education.css'; // Import the CSS file
 import AnimatedWrapper from '../animatedWrapper/AnimatedWrapper';
+import Certifications from '../certification/Certifications';
 
 const Education = () => {
   const [selectedDegree, setSelectedDegree] = useState(null);
 
   const educationDetails = [
     {
-      degree: 'BSc',
+      degree: 'Bachelor of Science',
       subject: 'Mathematics',
       institute: 'Jagannath Barooah College',
       address: 'Jorhat,Assam',
@@ -16,18 +17,11 @@ const Education = () => {
       percentage: '64.6%'
     },
     {
-      degree: 'HS',
+      degree: 'Higher Secondary',
       subject: 'Science',
       address: 'Jorhat,Assam',
       institute: 'Crescent Academy',
       percentage: '71.8%'
-    },
-    {
-      degree: 'HSLC',
-      subject: null,
-      address: 'Jorhat,Assam',
-      institute: 'Royal Oak High School',
-      percentage: '80%'
     },
     {
       degree: 'Web Development',

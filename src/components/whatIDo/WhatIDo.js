@@ -38,6 +38,7 @@ const WhatIDo = () => {
           <li>SQL, MariaDB, MySql, MongoDB</li>
           <li>DSA, Testing, Json Web Token</li>
           <li>GitHub, Netlify, Vercel, Postman, VS Code</li>
+          <li>Python and PHP (Basic)</li>
         </ul>
       </div>
     </div>

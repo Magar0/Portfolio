@@ -24,15 +24,17 @@ const Contact = () => {
                 <FaEnvelope size={40} color="#D44638" />
               </a>
             </div>
+            <div>
+              <a href="https://flowcv.com/resume/f92ik9q28t" target="_blank" className="resume-button">
+                My Resume
+              </a>
+            </div>
           </div>
           <div className="profile-container">
             <img src="/profile.jpg" alt="Your Name" className="profile-image" />
           </div>
         </div>
         <div className="bottom-section">
-          <a href="https://flowcv.com/resume/f92ik9q28t" target="_blank" className="resume-button">
-            Click to See My Resume
-          </a>
           <img src="/images/resume.jpg" alt="Another Image" className="bottom-image" />
 
           {/* New section for business inquiries */}
@@ -40,7 +42,7 @@ const Contact = () => {
             <h2>Contact Me for Business Inquiries</h2>
             <p>You can email me for any business requirements and queries. I'm eager to discuss potential collaborations and contribute to your projects.</p>
             <a href="mailto:rakeshmagar0@gmail.com" className="email-button">
-              Click to Email Me
+              Email Me
             </a>
           </div>
         </div>
