@@ -1,5 +1,19 @@
 .certifications-container {
+  margin-top: 50px;
+  h1 {
+    font-size: 28px;
+  }
   text-align: center;
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+  }
+  img {
+    width: 900px;
+  }
 }
 
 .certification-list {

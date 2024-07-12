@@ -12,7 +12,7 @@ const Experience = () => {
       course: "Web Development Trainee (MERN Stack)",
       institute: "Almabetter Online",
       startDate: "April 2023",
-      endDate: "Present",
+      endDate: "May 2024",
       url: "https://certificates.almabetter.com/en/profile/rakeshmagar334891",
       skills: ["Established expertise in full-stack programming.", "Hands on experience in Reactjs, Nextjs, Node JS, Express Js, Sql, MongoDB, etc.", "Implemented authentication and data encryption."]
     },
@@ -23,6 +23,14 @@ const Experience = () => {
       endDate: "February 22,2024",
       url: "https://nullclass.com/wp-content/uploads/2024/02/Rakesh-Magar-1.png",
       skills: ["Hands on experience on MERN stack, payment integration, authentication.", "Made Q&A platform similar to Stack overflow clone."]
+    },
+    {
+      course: "Full Stack Developer (Full Time Intern)",
+      institute: "DevTown",
+      startDate: "April 2024",
+      endDate: "Present",
+      // url: "https://nullclass.com/wp-content/uploads/2024/02/Rakesh-Magar-1.png",
+      skills: ["Leveraging React, Styled-Components, Antd , contributed to the development of a new Learning Management System (LMS) website."]
     }
   ]
   return (
