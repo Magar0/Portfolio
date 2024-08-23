@@ -1,0 +1,44 @@
+import { skills } from "@/lib/constants";
+import React from "react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
+import { ScrollArea } from "../ui/scroll-area";
+
+const Skills = () => {
+  return (
+    <div className="flex flex-col gap-[30px]">
+      <div className="flex flex-col gap-[30px] text-center xl:text-left">
+        <h3 className="text-4xl font-bold">{skills.title}</h3>
+        <p className="mx-auto max-w-[600px] text-white/60 xl:mx-0">
+          {skills.description}
+        </p>
+      </div>
+      <ScrollArea className="h-[400px]">
+        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
+          {skills.items.map((skill, index) => (
+            <li key={index}>
+              <TooltipProvider delayDuration={100}>
+                <Tooltip>
+                  <TooltipTrigger className="group flex h-[150px] w-full items-center justify-center rounded-xl bg-[#232329]">
+                    <div className="text-6xl transition-all duration-300 group-hover:text-accent">
+                      {skill.icon}
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="capitalize"> {skill.name}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </li>
+          ))}
+        </ul>
+      </ScrollArea>
+    </div>
+  );
+};
+
+export default Skills;
