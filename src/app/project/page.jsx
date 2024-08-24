@@ -46,11 +46,15 @@ const ProjectPage = () => {
                 {project?.id}
               </div>
 
-              {/* project category */}
-              <h2 className="text-[42px] font-bold capitalize leading-none text-white transition-all duration-500 group-hover:text-accent">
-                {project?.category}
-              </h2>
-
+              {/* project title & category */}
+              <div>
+                <h2 className="text-[42px] font-bold capitalize leading-none text-white transition-all duration-500 group-hover:text-accent">
+                  {project?.title}
+                </h2>
+                <h2 className="mt-2 text-base font-bold uppercase leading-none text-white/70 transition-all duration-500 group-hover:text-accent">
+                  {project?.category}
+                </h2>
+              </div>
               {/* project description */}
               <p className="text-white/60">{project?.description}</p>
 
@@ -62,18 +66,20 @@ const ProjectPage = () => {
 
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
-                <Link href={project?.live} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="group flex h-[55px] w-[55px] items-center justify-center rounded-full bg-white/5 md:h-[70px] md:w-[70px]">
-                        <BsArrowUpRight className="text-2xl text-white group-hover:text-accent md:text-3xl" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project?.live && (
+                  <Link href={project?.live} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="group flex h-[55px] w-[55px] items-center justify-center rounded-full bg-white/5 md:h-[70px] md:w-[70px]">
+                          <BsArrowUpRight className="text-2xl text-white group-hover:text-accent md:text-3xl" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
                 <Link href={project?.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -100,13 +106,13 @@ const ProjectPage = () => {
                 <SwiperSlide key={index} className="w-full">
                   <div className="group relative flex h-[270px] items-center justify-center bg-pink-50/20 sm:h-[350px] md:h-[450px]">
                     {/* overlay */}
-                    <div className="absolute bottom-0 top-0 z-10 h-full w-full bg-black/10"></div>
+                    <div className="absolute bottom-0 top-0 h-full w-full bg-primary"></div>
                     {/* image */}
                     <div className="relative h-full w-full">
                       <Image
                         src={project?.image}
                         fill
-                        className="object-cover"
+                        className="object-contain brightness-75"
                         alt="project img"
                       />
                     </div>
