@@ -19,15 +19,16 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="absolute h-[298px] w-[298px] overflow-hidden rounded-full mix-blend-lighten xl:h-[498px] xl:w-[498px]"
+          className="absolute h-[298px] w-[298px] mix-blend-lighten xl:h-[498px] xl:w-[498px]"
         >
           <Image
             src={"/img/my-pic.jpg"}
             fill
             quality={100}
             alt="img"
-          // className="object-cover"
+            className="object-contain  "
           />
+          <div className="absolute top-0 left-0 z-10 from-primary to-transparent h-full w-full   custom-gradient"></div>
         </motion.div>
 
         {/* circle */}
