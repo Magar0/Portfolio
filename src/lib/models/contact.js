@@ -14,7 +14,7 @@ const contactSchema = new Schema(
     },
     service: {
       type: String,
-      enum: ["frontend", "backend", "fullstack"],
+      enum: ["", "frontend", "backend", "fullstack"],
       required: false,
     },
     message: {

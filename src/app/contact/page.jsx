@@ -111,7 +111,7 @@ const ContactPage = () => {
                         <FormControl>
                           <Input
                             type="text"
-                            placeholder="First Name"
+                            placeholder="*First Name"
                             {...field}
                           ></Input>
                         </FormControl>
@@ -145,7 +145,7 @@ const ContactPage = () => {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="Email"
+                            placeholder="*Email"
                             {...field}
                           ></Input>
                         </FormControl>
@@ -213,7 +213,7 @@ const ContactPage = () => {
                       <FormControl>
                         <Textarea
                           className="h-[200px]"
-                          placeholder="Type your message here."
+                          placeholder="*Type your message here."
                           {...field}
                         />
                       </FormControl>
