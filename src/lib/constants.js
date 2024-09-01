@@ -201,6 +201,22 @@ export const skills = {
 export const projects = [
   {
     id: "01",
+    category: "Frontend",
+    title: "Live LMS Portal Frontend Development",
+    description:
+      "During my internship at Devtown, I was responsible for developing the frontend interface of a live learning management system (LMS) portal. My work included implementing key features such as user login, device limitation and profile management. I also created a comprehensive course section with module navigation and video playback, as well as a certificate section for easy sharing and downloading. To enhance the user experience, I integrated a live class calendar for upcoming event visualization and developed a doubt-clearing section for student-teacher interaction.",
+    stack: [
+      "React Js",
+      "Zustand",
+      "Antd",
+      "Styled-component",
+      "fingerprint js",
+    ],
+    image: "/img/LMSportal.png",
+    live: "https://www.learn.devtown.in/auth",
+  },
+  {
+    id: "02",
     category: "MERN stack",
     title: "Stackoverflow Clone",
     description:
@@ -221,7 +237,7 @@ export const projects = [
     github: "https://github.com/Magar0/StackOverflow-clone-MERN",
   },
   {
-    id: "02",
+    id: "03",
     category: "Full Stack",
     title: "Portfolio using Next JS",
     description:
@@ -238,7 +254,7 @@ export const projects = [
     github: "https://github.com/Magar0/Portfolio.git",
   },
   {
-    id: "03",
+    id: "04",
     category: "full stack",
     title: "School Website using AWS",
     description:
@@ -249,7 +265,7 @@ export const projects = [
     github: "https://github.com/Magar0/Next.js-MySql-AWS-School-Hub",
   },
   {
-    id: "04",
+    id: "05",
     category: "Full Stack",
     title: "Enterntainment App",
     description:
@@ -269,7 +285,7 @@ export const projects = [
       "https://github.com/Magar0/entertainment-app-AlmaBetter-FinalProject",
   },
   {
-    id: "05",
+    id: "06",
     category: "Full Stack",
     title: "Todo List Next Js",
     description:
@@ -286,17 +302,17 @@ export const projects = [
     live: "https://todo-list-next-js-express-js-mongo-db-topaz.vercel.app/",
     github: "https://github.com/Magar0/TodoList-NextJs-ExpressJs-MongoDb",
   },
-  {
-    id: "06",
-    category: "Frontend",
-    title: "Car Website",
-    description:
-      "Developed a fully responsive car website using Bootstrap and Redux. The website features two pages: a main page for browsing cars and a detailed page for each individual car. Redux is used to manage global state.",
-    stack: ["React JS", "Bootstrap", "Material UI", "Redux"],
-    image: "/img/car_website.png",
-    live: "https://car-search-next-js.vercel.app/",
-    github: "https://github.com/Magar0/Car-search-Next-js",
-  },
+  // {
+  //   id: "07",
+  //   category: "Frontend",
+  //   title: "Car Website",
+  //   description:
+  //     "Developed a fully responsive car website using Bootstrap and Redux. The website features two pages: a main page for browsing cars and a detailed page for each individual car. Redux is used to manage global state.",
+  //   stack: ["React JS", "Bootstrap", "Material UI", "Redux"],
+  //   image: "/img/car_website.png",
+  //   live: "https://car-search-next-js.vercel.app/",
+  //   github: "https://github.com/Magar0/Car-search-Next-js",
+  // },
   {
     id: "07",
     category: "Backend",

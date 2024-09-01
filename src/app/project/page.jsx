@@ -80,18 +80,20 @@ const ProjectPage = () => {
                     </TooltipProvider>
                   </Link>
                 )}
-                <Link href={project?.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="group flex h-[55px] w-[55px] items-center justify-center rounded-full bg-white/5 md:h-[70px] md:w-[70px]">
-                        <BsGithub className="text-2xl text-white group-hover:text-accent md:text-3xl" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project?.github && (
+                  <Link href={project?.github} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="group flex h-[55px] w-[55px] items-center justify-center rounded-full bg-white/5 md:h-[70px] md:w-[70px]">
+                          <BsGithub className="text-2xl text-white group-hover:text-accent md:text-3xl" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
