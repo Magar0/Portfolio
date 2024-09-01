@@ -11,6 +11,8 @@ import {
   FaLinkedinIn,
   FaBootstrap,
   FaAws,
+  FaPython,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -142,6 +144,14 @@ export const skills = {
     {
       icon: <SiTypescript />,
       name: "typescript",
+    },
+    {
+      icon: <FaPython />,
+      name: "python (basic)",
+    },
+    {
+      icon: <FaJava />,
+      name: "java (basic)",
     },
     {
       icon: <FaReact />,
