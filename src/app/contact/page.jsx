@@ -237,21 +237,23 @@ const ContactPage = () => {
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => (
                 <li key={index} className="flex items-center gap-6">
-                  <Link
-                    href={item?.link ? item.link : "#"}
-                    target={item?.link ? "_blank" : null}
-                    className={`${item?.link ? "" : "cursor-default"} flex items-center gap-6`}
-                  >
-                    <div className="xl-h-[72px] flex h-[52px] w-[52px] items-center justify-center rounded-md bg-[#27272c] text-accent xl:w-[72px]">
+                  <div className="xl-h-[72px] flex h-[52px] w-[52px] items-center justify-center rounded-md bg-[#27272c] text-accent xl:w-[72px]">
+                    {item?.link ? (
+                      <Link
+                        href={item.link}
+                        target="_blank"
+                        className="text-[28px]"
+                      >
+                        {item?.icon}
+                      </Link>
+                    ) : (
                       <div className="text-[28px]">{item?.icon}</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-white/60">{item?.title}</p>
-                      <p className="text-base md:text-xl">
-                        {item?.description}
-                      </p>
-                    </div>
-                  </Link>
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white/60">{item?.title}</p>
+                    <p className="text-base md:text-xl">{item?.description}</p>
+                  </div>
                 </li>
               ))}
             </ul>
