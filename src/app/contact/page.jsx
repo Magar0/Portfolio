@@ -239,7 +239,7 @@ const ContactPage = () => {
                 <li key={index} className="flex items-center gap-6">
                   <Link
                     href={item?.link ? item.link : "#"}
-                    target="_blank"
+                    target={item?.link ? "_blank" : null}
                     className={`${item?.link ? "" : "cursor-default"} flex items-center gap-6`}
                   >
                     <div className="xl-h-[72px] flex h-[52px] w-[52px] items-center justify-center rounded-md bg-[#27272c] text-accent xl:w-[72px]">
