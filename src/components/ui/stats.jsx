@@ -6,10 +6,10 @@ const Stats = () => {
   const statsList = [
     {
       num: 4,
-      text: "Months of experience",
+      text: "Months of Work experience",
     },
     {
-      num: 20,
+      num: 10,
       text: "Projects completed",
     },
     {
@@ -35,7 +35,7 @@ const Stats = () => {
                 duration={4}
                 delay={2}
                 className="text-4xl font-extrabold xl:text-5xl"
-              // suffix="+"
+                // suffix="+"
               />
               <p
                 className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}

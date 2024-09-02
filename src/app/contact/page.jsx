@@ -28,25 +28,25 @@ import { z } from "zod";
 import { messageFormSchema } from "@/lib/models/formSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/components/ui/use-toast";
+import Link from "next/link";
 
 const ContactPage = () => {
   const [submitError, setSubmitError] = useState("");
   const { toast } = useToast();
-  const form = useForm(
-    {
-      mode: "onChange",
-      resolver: zodResolver(messageFormSchema),
-      defaultValues: {
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: "",
-      },
-    })
+  const form = useForm({
+    mode: "onChange",
+    resolver: zodResolver(messageFormSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: "",
+    },
+  });
 
-  const isLoading = form.formState.isSubmitting
+  const isLoading = form.formState.isSubmitting;
 
   const onSubmit = async (value) => {
     try {
@@ -62,7 +62,7 @@ const ContactPage = () => {
         // form.reset();
         return;
       }
-      toast({ description: "Message sent successsfully" })
+      toast({ description: "Message sent successsfully" });
       form.reset();
     } catch (err) {
       console.log(err);
@@ -177,9 +177,7 @@ const ContactPage = () => {
                   name="service"
                   render={({ field }) => (
                     <FormItem>
-                      <Select
-                        onValueChange={field.onChange}
-                      >
+                      <Select onValueChange={field.onChange}>
                         <FormControl>
                           <SelectTrigger className="w-full">
                             <SelectValue placeholder="Select a service" />
@@ -239,13 +237,21 @@ const ContactPage = () => {
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => (
                 <li key={index} className="flex items-center gap-6">
-                  <div className="xl-h-[72px] flex h-[52px] w-[52px] items-center justify-center rounded-md bg-[#27272c] text-accent xl:w-[72px]">
-                    <div className="text-[28px]">{item?.icon}</div>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white/60">{item?.title}</p>
-                    <p className="text-xl">{item?.description}</p>
-                  </div>
+                  <Link
+                    href={item?.link ? item.link : "#"}
+                    target="_blank"
+                    className={`${item?.link ? "" : "cursor-default"} flex items-center gap-6`}
+                  >
+                    <div className="xl-h-[72px] flex h-[52px] w-[52px] items-center justify-center rounded-md bg-[#27272c] text-accent xl:w-[72px]">
+                      <div className="text-[28px]">{item?.icon}</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-white/60">{item?.title}</p>
+                      <p className="text-base md:text-xl">
+                        {item?.description}
+                      </p>
+                    </div>
+                  </Link>
                 </li>
               ))}
             </ul>

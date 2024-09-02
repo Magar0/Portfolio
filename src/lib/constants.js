@@ -13,8 +13,11 @@ import {
   FaAws,
   FaPython,
   FaJava,
+  FaWhatsapp,
 } from "react-icons/fa";
 import {
+  SiSupabase,
+  SiFirebase,
   SiTypescript,
   SiGmail,
   Sitailwindcss,
@@ -27,6 +30,7 @@ import {
   SiMongodb,
   SiMysql,
   SiPostgresql,
+  SiLeetcode,
 } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 
@@ -38,17 +42,27 @@ export const socials = [
     path: "https://www.linkedin.com/in/magar0/",
   },
   {
-    name: "Vercel",
-    icon: <IoLogoVercel />,
-    path: "https://vercel.com/rakesh-magars-projects",
+    name: "Leetcode",
+    icon: <SiLeetcode />,
+    path: "https://leetcode.com/u/Magar0/",
   },
+  // {
+  //   name: "Vercel",
+  //   icon: <IoLogoVercel />,
+  //   path: "https://vercel.com/rakesh-magars-projects",
+  // },
   { name: "Gmail", icon: <SiGmail />, path: "mailto:rakeshmagar0@gmail.com" },
+  {
+    name: "Whats App",
+    icon: <FaWhatsapp />,
+    path: "https://wa.me/+918431560680",
+  },
 ];
 
 export const about = {
   title: "About me",
   description:
-    "Aspiring Full Stack Developer with 4 months of hands-on experience building a live LMS frontend using React JS. Proficient in MERN stack technologies, honed through both practical industry experience and rigorous online training at AlmaBetter.",
+    "Aspiring Full Stack Developer with hands-on experience building a live LMS frontend using React JS. Proficient in MERN stack technologies, honed through both practical industry experience and rigorous online training at AlmaBetter.",
   info: [
     {
       name: "Name",
@@ -112,98 +126,132 @@ export const education = {
       duration: "May,2023 - April,2024",
     },
     {
+      institution: "Chandigarh University",
+      degree: "MCA (Online)",
+      duration: "2024 - present",
+    },
+    {
       institution: "Null Class Online",
       degree: "Web Development Internship",
       duration: "Jan,2024 - Feb,2024",
     },
-    // {
-    //     institution: "Chandigarh University",
-    //     degree: "MCA (Online)",
-    //     duration: "2024 - present"
-    // },
   ],
 };
 
 export const skills = {
   icon: "/img/badge.svg",
   title: "My Skills",
-  description: "I am specialized in MERN stack",
+  // description: "I am specialized in MERN stack",
   items: [
     {
       icon: <FaHtml5 />,
       name: "html 5",
+      category: "frontend",
     },
     {
       icon: <FaCss3 />,
       name: "css 3",
+      category: "frontend",
     },
     {
       icon: <FaJs />,
       name: "javascript",
+      category: "frontend",
     },
     {
       icon: <SiTypescript />,
       name: "typescript",
+      category: "frontend",
     },
     {
       icon: <FaPython />,
       name: "python (basic)",
+      category: "backend",
     },
     {
       icon: <FaJava />,
       name: "java (basic)",
+      category: "backend",
     },
     {
       icon: <FaReact />,
-      name: "react.js",
+      name: "react js",
+      category: "frontend",
+    },
+    {
+      icon: <FaReact />,
+      name: "react native (learning)",
+      category: "frontend",
     },
     {
       icon: <SiNextdotjs />,
-      name: "next.js",
+      name: "next js",
+      category: "frontend",
     },
     {
       icon: <FaBootstrap />,
       name: "Bootstrap",
+      category: "frontend",
     },
     {
       icon: <SiTailwindcss />,
       name: "Tailwind Css",
+      category: "frontend",
     },
     {
       icon: <SiStyledcomponents />,
       name: "Styled Component",
+      category: "frontend",
     },
     {
       icon: <SiAntdesign />,
       name: "Antd",
+      category: "frontend",
     },
     {
       icon: <SiShadcnui />,
       name: "ShadCn UI",
+      category: "frontend",
     },
     {
       icon: <FaNodeJs />,
       name: "node js",
+      category: "backend",
     },
     {
       icon: <SiExpress />,
       name: "Express js",
+      category: "backend",
     },
     {
       icon: <FaAws />,
       name: "AWS",
+      category: "backend",
     },
     {
       icon: <SiMongodb />,
       name: "Mongo DB",
+      category: "backend",
     },
     {
       icon: <SiPostgresql />,
       name: "Postgres sql",
+      category: "backend",
     },
     {
       icon: <SiMysql />,
       name: "My Sql",
+      category: "backend",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
+      category: "backend",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+      category: "backend",
     },
   ],
 };
@@ -346,6 +394,13 @@ export const info = [
     icon: <FaEnvelope />,
     title: "Email",
     description: "rakeshmagar0@gmail.com",
+    link: "mailto:rakeshmagar0@gmail.com",
+  },
+  {
+    icon: <FaWhatsapp />,
+    title: "Whats App",
+    description: "+91-8431560680",
+    link: "https://wa.me/+918431560680",
   },
   {
     icon: <FaMapMarkerAlt />,
