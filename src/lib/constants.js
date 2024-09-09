@@ -180,7 +180,7 @@ export const skills = {
     },
     {
       icon: <FaReact />,
-      name: "react native (learning)",
+      name: "react native",
       category: "frontend",
     },
     {
@@ -275,6 +275,17 @@ export const projects = [
   },
   {
     id: "02",
+    category: "React Native App",
+    title: "React Native App",
+    description:
+      "Built a full stack ,video sharing app using React Native. Secure login, dynamic home screen, and easy navigation. Upload and share videos, view profile details, and bookmark favorites. Enjoy efficient search, real-time updates, and smooth animations.",
+    stack: ["React-native", "appwork", "native-wind", "Animatable", "Expo"],
+    image: "/img/native-app.jpg",
+    // live: "https://stack-overflow-clone-mern-frontend.vercel.app/",
+    github: "https://github.com/Magar0/React-Native-App",
+  },
+  {
+    id: "03",
     category: "MERN stack",
     title: "Stackoverflow Clone",
     description:
@@ -295,7 +306,7 @@ export const projects = [
     github: "https://github.com/Magar0/StackOverflow-clone-MERN",
   },
   {
-    id: "03",
+    id: "04",
     category: "Full Stack",
     title: "Portfolio using Next JS",
     description:
@@ -312,7 +323,7 @@ export const projects = [
     github: "https://github.com/Magar0/Portfolio.git",
   },
   {
-    id: "04",
+    id: "05",
     category: "full stack",
     title: "School Website using AWS",
     description:
@@ -323,7 +334,7 @@ export const projects = [
     github: "https://github.com/Magar0/Next.js-MySql-AWS-School-Hub",
   },
   {
-    id: "05",
+    id: "06",
     category: "Full Stack",
     title: "Enterntainment App",
     description:
@@ -343,7 +354,7 @@ export const projects = [
       "https://github.com/Magar0/entertainment-app-AlmaBetter-FinalProject",
   },
   {
-    id: "06",
+    id: "07",
     category: "Full Stack",
     title: "Todo List Next Js",
     description:
@@ -361,7 +372,7 @@ export const projects = [
     github: "https://github.com/Magar0/TodoList-NextJs-ExpressJs-MongoDb",
   },
   // {
-  //   id: "07",
+  //   id: "08",
   //   category: "Frontend",
   //   title: "Car Website",
   //   description:
@@ -372,7 +383,7 @@ export const projects = [
   //   github: "https://github.com/Magar0/Car-search-Next-js",
   // },
   {
-    id: "07",
+    id: "08",
     category: "Backend",
     title: "RoleBased REST API using NodeJs",
     description:
