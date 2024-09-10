@@ -310,7 +310,7 @@ export const projects = [
     category: "Full Stack",
     title: "Portfolio using Next JS",
     description:
-      "This portfolio app, built using Next.js, showcases a comprehensive overview of your professional journey. It provides a user-friendly interface that highlights your skills, education, experience, and projects. The app leverages MongoDB for efficient data storage and management, ensuring a seamless user experience.",
+      "This portfolio app, built using Next.js, showcases a comprehensive overview of my professional journey. It provides a user-friendly interface that highlights your skills, education, experience, and projects. The app leverages MongoDB for efficient data storage and management, ensuring a seamless user experience.",
     stack: [
       "Next JS",
       "Mongo DB",
