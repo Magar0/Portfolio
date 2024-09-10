@@ -281,7 +281,7 @@ export const projects = [
       "Built a full stack ,video sharing app using React Native. Secure login, dynamic home screen, and easy navigation. Upload and share videos, view profile details, and bookmark favorites. Enjoy efficient search, real-time updates, and smooth animations.",
     stack: ["React-native", "appwork", "native-wind", "Animatable", "Expo"],
     image: "/img/native-app.jpg",
-    live: "https://expo.dev/accounts/thapa0/projects/thapa-app/builds/005a9447-73e3-4b78-aefd-6598615025c2",
+    live: "https://expo.dev/accounts/thapa0/projects/thapa-app/builds/417aec8d-361e-4f97-a2a0-5d712eeabaca",
     github: "https://github.com/Magar0/React-Native-App",
   },
   {
