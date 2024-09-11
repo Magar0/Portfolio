@@ -272,6 +272,7 @@ export const projects = [
     ],
     image: "/img/LMSportal.png",
     live: "https://www.learn.devtown.in/auth",
+    youtube: "https://www.youtube.com/watch?v=cTK_N8U1LRY",
   },
   {
     id: "02",
@@ -304,6 +305,7 @@ export const projects = [
     image: "/img/stackoverflow.png",
     live: "https://stack-overflow-clone-mern-frontend.vercel.app/",
     github: "https://github.com/Magar0/StackOverflow-clone-MERN",
+    youtube: "https://youtu.be/IOIUH8iq4BI",
   },
   {
     id: "04",
@@ -332,6 +334,7 @@ export const projects = [
     image: "/img/school-web.png",
     // live: "#",
     github: "https://github.com/Magar0/Next.js-MySql-AWS-School-Hub",
+    youtube: "https://youtu.be/_r_SPHW18NI",
   },
   {
     id: "06",
@@ -352,6 +355,7 @@ export const projects = [
     live: "https://entertainment--webapp.vercel.app/login/",
     github:
       "https://github.com/Magar0/entertainment-app-AlmaBetter-FinalProject",
+    youtube: "https://youtu.be/jW6uCEWudHY",
   },
   {
     id: "07",

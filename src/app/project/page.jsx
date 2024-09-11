@@ -10,7 +10,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight, BsGithub, BsYoutube } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
@@ -65,7 +65,7 @@ const ProjectPage = () => {
               </p>
 
               <div className="border border-white/20"></div>
-              <div className="flex items-center gap-4">
+              <div className="mb-10 flex items-center gap-4">
                 {project?.live && (
                   <Link href={project?.live} target="_blank">
                     <TooltipProvider delayDuration={100}>
@@ -89,6 +89,20 @@ const ProjectPage = () => {
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+                {project?.youtube && (
+                  <Link href={project?.youtube} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="group flex h-[55px] w-[55px] items-center justify-center rounded-full bg-white/5 md:h-[70px] md:w-[70px]">
+                          <BsYoutube className="text-2xl text-white group-hover:text-accent md:text-3xl" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Youtube</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
