@@ -310,6 +310,26 @@ export const projects = [
   {
     id: "04",
     category: "Full Stack",
+    title: "Todo List- NextJs and NextAuth",
+    description:
+      "This responsive Todo App, developed with Next.js, provides a robust and user-friendly platform for managing tasks. It integrates modern authentication methods using NextAuth for secure login through Google, GitHub, or custom email/password. With features like real-time updates, efficient state management, and powerful search capabilities, this application is designed to enhance productivity and streamline task management.",
+    stack: [
+      "Next Js",
+      "Next Auth",
+      "Formik",
+      "SWR",
+      "Tailwind CSS",
+      "AntD",
+      "Mongo DB",
+      "Redux Toolkit",
+    ],
+    image: "/img/todo.png",
+    live: "https://todo-list-using-nextjs-mongo-db-next-auth.vercel.app/",
+    github: "https://github.com/Magar0/TodoList-using-Nextjs-MongoDB-nextAuth",
+  },
+  {
+    id: "05",
+    category: "Full Stack",
     title: "Portfolio using Next JS",
     description:
       "This portfolio app, built using Next.js, showcases a comprehensive overview of my professional journey. It provides a user-friendly interface that highlights your skills, education, experience, and projects. The app leverages MongoDB for efficient data storage and management, ensuring a seamless user experience.",
@@ -325,7 +345,7 @@ export const projects = [
     github: "https://github.com/Magar0/Portfolio.git",
   },
   {
-    id: "05",
+    id: "06",
     category: "full stack",
     title: "School Website using AWS",
     description:
@@ -337,7 +357,7 @@ export const projects = [
     youtube: "https://youtu.be/_r_SPHW18NI",
   },
   {
-    id: "06",
+    id: "07",
     category: "Full Stack",
     title: "Enterntainment App",
     description:
@@ -357,24 +377,7 @@ export const projects = [
       "https://github.com/Magar0/entertainment-app-AlmaBetter-FinalProject",
     youtube: "https://youtu.be/jW6uCEWudHY",
   },
-  {
-    id: "07",
-    category: "Full Stack",
-    title: "Todo List Next Js",
-    description:
-      "Made a dynamic todo list app using Next Js, Express Js, MongoDB",
-    stack: [
-      "Next Js",
-      "Tailwind CSS",
-      "Express JS",
-      "Node JS",
-      "Mongo DB",
-      "Redux Toolkit",
-    ],
-    image: "/img/todo.png",
-    live: "https://todo-list-next-js-express-js-mongo-db-topaz.vercel.app/",
-    github: "https://github.com/Magar0/TodoList-NextJs-ExpressJs-MongoDb",
-  },
+
   // {
   //   id: "08",
   //   category: "Frontend",
@@ -387,7 +390,7 @@ export const projects = [
   //   github: "https://github.com/Magar0/Car-search-Next-js",
   // },
   {
-    id: "08",
+    id: "09",
     category: "Backend",
     title: "RoleBased REST API using NodeJs",
     description:
