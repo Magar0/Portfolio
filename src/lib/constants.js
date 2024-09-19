@@ -102,9 +102,28 @@ export const experience = {
     "Aspiring Full Stack Developer with 4 months of hands-on experience building a live LMS frontend using React JS.",
   items: [
     {
+      company: "Alma Better Online",
+      position: "Full Stack Web Development (MERN) Trainee",
+      duration: "Jun,2023 - Jan,2024",
+      link: "https://certificates.almabetter.com/en/verify/16003696328496",
+      certificateImg: "/img/almaBetter.jpg",
+    },
+    {
+      company: "Null Class Online",
+      position: "Web Development Trainee",
+      duration: "Jan,2024 - Feb,2024",
+      certificateImg: "/pdf/NullClass-Web-Development-Experience-Letter.jpg",
+      link: "https://www.nullclass.com/certificates/66ea9428801ab9d74b3ae81b",
+    },
+    {
       company: "Devtown",
       position: "Full Stack Developer Intern",
-      duration: "April, 2023 - present",
+      duration: "April, 2024 - Aug, 2024",
+    },
+    {
+      company: "YoliDay llp",
+      position: "Full Stack Developer Intern",
+      duration: "Sept, 2024 - present",
     },
   ],
 };
@@ -120,21 +139,21 @@ export const education = {
       duration: "2018-2021",
     },
 
-    {
-      institution: "Alma Better Online",
-      degree: "Full Stack Web Development (MERN)",
-      duration: "May,2023 - April,2024",
-    },
+    // {
+    //   institution: "Alma Better Online",
+    //   degree: "Full Stack Web Development (MERN)",
+    //   duration: "May,2023 - April,2024",
+    // },
     {
       institution: "Chandigarh University",
       degree: "MCA (Online)",
       duration: "2024 - present",
     },
-    {
-      institution: "Null Class Online",
-      degree: "Web Development Internship",
-      duration: "Jan,2024 - Feb,2024",
-    },
+    // {
+    //   institution: "Null Class Online",
+    //   degree: "Web Development Internship",
+    //   duration: "Jan,2024 - Feb,2024",
+    // },
   ],
 };
 

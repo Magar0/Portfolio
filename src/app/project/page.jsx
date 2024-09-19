@@ -35,7 +35,7 @@ const ProjectPage = () => {
           ease: "easeIn",
         },
       }}
-      className="flex min-h-[80vh] flex-col justify-center py-12"
+      className="flex min-h-[80vh] flex-col justify-center py-5"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
