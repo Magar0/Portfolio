@@ -31,6 +31,8 @@ import {
   SiMysql,
   SiPostgresql,
   SiLeetcode,
+  SiDrizzle,
+  SiUpstash,
 } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 
@@ -124,6 +126,11 @@ export const experience = {
       company: "YoliDay llp",
       position: "Full Stack Developer Intern",
       duration: "Sept, 2024 - present",
+    },
+    {
+      company: "Smollan",
+      position: "Full Stack Developer Intern",
+      duration: "Oct, 2024 - Jan, 2025",
     },
   ],
 };
@@ -272,12 +279,42 @@ export const skills = {
       name: "Firebase",
       category: "backend",
     },
+    {
+      icon: <SiDrizzle />,
+      name: "Drizzle",
+      category: "backend",
+    },
+    {
+      icon: <SiUpstash />,
+      name: "Drizzle",
+      category: "backend",
+    },
   ],
 };
 
 export const projects = [
   {
     id: "01",
+    category: "Full Stack Next JS",
+    title: "Library Management Website App",
+    description:
+      "A production-grade library management platform built with Next.js, TypeScript, and PostgreSQL, featuring role-based access for admin and users. It includes a public-facing app for users and a dedicated admin interface for managing books, users, and workflows. \n Key Features: \n🔹Role-Based Access: Separate interfaces for admins (book/user management) and users (borrowing, tracking). \n 🔹Authentication: Secure onboarding with email notifications. \n 🔹Book Management: Availability tracking, summaries, recommendations. \n 🔹User Profiles: Borrow history, account management, and receipts. \n🔹Optimized Performance: Caching (Upstash Redis), media processing (ImageKit), and rate-limiting.\n 🔹Advanced Backend: Postgres with Drizzle ORM, automated workflows, and database seeding.\n 🔹Modern UI: Built with Tailwind CSS, ShadCN, and 3D effects.\n 🔹A scalable, secure, and efficient system with DDoS protection, complex DB queries, and custom notifications, designed with industry best practices. 🚀",
+    stack: [
+      "Next Js",
+      "PostgreSQL",
+      "Upstash",
+      "ImageKit",
+      "TypeScript",
+      "Nodemailer",
+      "Tailwind CSS",
+    ],
+    image: "/img/library-management.png",
+    live: "https://book-house-next-js.vercel.app/",
+    github: "https://github.com/Magar0/Library-management-system-NextJs",
+    youtube: "https://www.youtube.com/watch?v=c5TzKkSxGw4",
+  },
+  {
+    id: "02",
     category: "Frontend",
     title: "Live LMS Portal Frontend Development",
     description:
@@ -294,7 +331,7 @@ export const projects = [
     youtube: "https://www.youtube.com/watch?v=cTK_N8U1LRY",
   },
   {
-    id: "02",
+    id: "03",
     category: "React Native App",
     title: "React Native App",
     description:
@@ -305,7 +342,7 @@ export const projects = [
     github: "https://github.com/Magar0/React-Native-App",
   },
   {
-    id: "03",
+    id: "04",
     category: "MERN stack",
     title: "Stackoverflow Clone",
     description:
@@ -327,7 +364,7 @@ export const projects = [
     youtube: "https://youtu.be/IOIUH8iq4BI",
   },
   {
-    id: "04",
+    id: "05",
     category: "Full Stack",
     title: "Todo List- NextJs and NextAuth",
     description:
@@ -347,7 +384,7 @@ export const projects = [
     github: "https://github.com/Magar0/TodoList-using-Nextjs-MongoDB-nextAuth",
   },
   {
-    id: "05",
+    id: "06",
     category: "Full Stack",
     title: "Portfolio using Next JS",
     description:
@@ -364,7 +401,7 @@ export const projects = [
     github: "https://github.com/Magar0/Portfolio.git",
   },
   {
-    id: "06",
+    id: "07",
     category: "full stack",
     title: "School Website using AWS",
     description:
@@ -376,7 +413,7 @@ export const projects = [
     youtube: "https://youtu.be/_r_SPHW18NI",
   },
   {
-    id: "07",
+    id: "08",
     category: "Full Stack",
     title: "Enterntainment App",
     description:
@@ -408,17 +445,17 @@ export const projects = [
   //   live: "https://car-search-next-js.vercel.app/",
   //   github: "https://github.com/Magar0/Car-search-Next-js",
   // },
-  {
-    id: "09",
-    category: "Backend",
-    title: "RoleBased REST API using NodeJs",
-    description:
-      "A RESTful API with user authentication, role-based access control, and secure API endpoints. Implemented user authentication (JWTs) and role-based access control for authorization. Comprehensive User Management: Users can view & update profiles, while Admins have full CRUD access. Robust Security: Middleware and input validation techniques ensure data integrity.",
-    stack: ["Node JS", "Express JS", "JWT", "Mongo DB", "Postman"],
-    image: "/img/No_Image_Available.jpg",
-    // live: "#",
-    github: "https://github.com/Magar0/RoleBased-REST-api-using-NodeJs",
-  },
+  // {
+  //   id: "09",
+  //   category: "Backend",
+  //   title: "RoleBased REST API using NodeJs",
+  //   description:
+  //     "A RESTful API with user authentication, role-based access control, and secure API endpoints. Implemented user authentication (JWTs) and role-based access control for authorization. Comprehensive User Management: Users can view & update profiles, while Admins have full CRUD access. Robust Security: Middleware and input validation techniques ensure data integrity.",
+  //   stack: ["Node JS", "Express JS", "JWT", "Mongo DB", "Postman"],
+  //   image: "/img/No_Image_Available.jpg",
+  //   // live: "#",
+  //   github: "https://github.com/Magar0/RoleBased-REST-api-using-NodeJs",
+  // },
 ];
 
 export const info = [

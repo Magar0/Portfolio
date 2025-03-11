@@ -56,7 +56,11 @@ const ProjectPage = () => {
                 </h2>
               </div>
               {/* project description */}
-              <p className="text-white/60">{project?.description}</p>
+              <div className="flex flex-col gap-1">
+                {project?.description.split("\n").map((line, ind) => (
+                  <p className="text-white/60">{line}</p>
+                ))}
+              </div>
 
               {/* stacks */}
               <p className="text-wrap capitalize text-accent">
