@@ -58,7 +58,9 @@ const ProjectPage = () => {
               {/* project description */}
               <div className="flex flex-col gap-1">
                 {project?.description.split("\n").map((line, ind) => (
-                  <p className="text-white/60">{line}</p>
+                  <p className="text-white/60" key={ind}>
+                    {line}
+                  </p>
                 ))}
               </div>
 
